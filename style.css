@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(225, 235, 245);
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 35px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+#playerChoise {
+    font-size: 30px;
+}
+input {
+    min-height: 30px;
+    font-size: 20px;
+}
