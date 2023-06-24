@@ -11,11 +11,11 @@
 <h1>Rock paper scissors</h1>
 <h2 id="bot-score">Bot score: 0</h2>
 <h2 id="human-score">Human score: 0</h2>
-<h2 id="result"></h3>
-<form>
-    <label for="playerChoise" id="playerChoise">Write your choise:</label>
-    <input type="text" id="answer" name="answer"><br><br>
-    <input id="button1" type="submit" value="Submit" onclick="submitForm(event)">
-</form>      
+<h2 id="result"></h2>
+<div class="buttons">
+    <button id="rock" class="classRock" onclick="submitAnswer('rock')">rock</button>
+    <button id="scissors" class="classScissors" onclick="submitAnswer('scissors')">scissors</button>
+    <button id="paper" class="classPaper" onclick="submitAnswer('paper')">paper</button>
+</div>
 </body>
 </html>

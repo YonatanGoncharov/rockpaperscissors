@@ -41,11 +41,8 @@ function roundPlay(playerSelection, computerSelection){
         return "You lose, rock beats scissors!";
     }
 }
-function submitForm(event) {
-    event.preventDefault(); // Prevent form submission
-    
-    // Get the value from the input field
-    let answer = document.getElementById("answer").value;
+function submitAnswer(event) {
+    let answer = event;
     let get = roundPlay(answer , getComputerChoice());
     document.getElementById("result").innerHTML = get;
     if (get.includes("win")){
@@ -57,7 +54,11 @@ function submitForm(event) {
         document.getElementById("bot-score").innerHTML = "Bot score: " + botScore;
     }
     if (humanScore == 5 || botScore == 5){
-        document.getElementById("button1").disabled = true;
+        document.getElementById("rock").disabled = true;
+        document.getElementById("paper").disabled = true;
+        document.getElementById("scissors").disabled = true;
+        document.getElementById('your-div-id').classList.remove('')
+
         if (humanScore == 5){
             document.getElementById("result").innerHTML = "The human has won the game!";
         }
